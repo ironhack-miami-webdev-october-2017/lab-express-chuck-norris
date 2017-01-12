@@ -105,9 +105,9 @@ client.getJokeCategories()
 
 ```
 
-:::success
+
 :bulb: When your app requests the list of categories to the Chuck Norris API, the response will be an array. Prepare the data to show it in the view by saving it in an object.
-:::
+
 
 Each category will be a link. When the user clicks on one of them it should send him to the category. Take a look at this:
 
