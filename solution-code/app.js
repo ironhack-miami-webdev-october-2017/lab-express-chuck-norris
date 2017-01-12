@@ -49,7 +49,7 @@ app.get('/search', (req, res) => {
 app.post('/search', (req, res) => {
   let keyword = req.body.keyword;
 
-  CNClient.search(keyword).then( (response) => {
+  client.search(keyword).then( (response) => {
     let randomIndex = Math.floor(Math.random() * response.items.length -1);
     console.log(response.items[randomIndex]);
     res.render('search-form', {joke: response.items[randomIndex]});
