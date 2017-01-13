@@ -2,9 +2,28 @@
 <html lang="en">
   <head>
     <title>The Chuck Norris Joke Department</title>
-    <link rel="stylesheet" type="css/text" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
   </head>
   <body>
-    <%- body -%>
+    <div class="container">
+      <h1 class="title">The Chuck Norris Joke Department</h1>
+
+      <nav>
+        <div class="list-item">
+          <a href="/">Home</a>
+        </div>
+        <div class="list-item">
+          <a href="/random">Random Joke</a>
+        </div>
+        <div class="list-item">
+          <a href="/categories">Categories</a>
+        </div>
+        <div class="list-item">
+          <a href="/search">Search by Term</a>
+        </div>
+      </nav>
+
+      <%- body -%>
+    </div>
   </body>
 </html>

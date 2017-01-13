@@ -1,7 +1,9 @@
-<h1>Categories</h1>
+<h2 class="title">Categories</h2>
 
-<ul>
-  <% categories.forEach((category) => { %>
-    <li><a href = "categories/<%= category %>"><%= category %></a></li>
-  <% })%>
-</ul>
+<div class="categories-container">
+  <ul class="categories-list">
+    <% categories.forEach((category) => { %>
+      <li><a href = "categories/<%= category %>"><%= category %></a></li>
+    <% })%>
+  </ul>
+</div>

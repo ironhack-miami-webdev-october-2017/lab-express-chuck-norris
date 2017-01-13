@@ -1,8 +1,12 @@
-<form action="/search" method="post">
-  <label for="keyword"></label>
-  <input type="text" name="keyword" id="keyword">
-</form>
+<div class="search-form-container">
+  <form action="/search" method="post">
+    <label for="keyword">Search by: </label>
+    <input type="text" name="keyword" id="keyword">
+  </form>
+</div>
 
 <% if (joke) { %>
-  <%= joke.value %>
+  <div class="joke-box">
+    <p><%= joke.value %></p>
+  </div>
 <%}%>
