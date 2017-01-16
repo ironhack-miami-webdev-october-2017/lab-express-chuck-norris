@@ -6,20 +6,22 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="title">The Chuck Norris Joke Department</h1>
+      <h1>The Chuck Norris Joke Department</h1>
 
       <nav>
         <div class="list-item">
-          <a href="/">Home</a>
+          <a href="/random">Random</a>
         </div>
-        <div class="list-item">
-          <a href="/random">Random Joke</a>
-        </div>
+
         <div class="list-item">
           <a href="/categories">Categories</a>
         </div>
+
         <div class="list-item">
-          <a href="/search">Search by Term</a>
+          <form action="/search" method="post">
+            <label for="keyword">Search: </label>
+            <input type="text" name="keyword" id="keyword">
+          </form>
         </div>
       </nav>
 
